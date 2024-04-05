@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  font-family: inter;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: transparent;
+  color: #000000;
+  overflow-y: hidden;
+}
+.my-header,
+.my-paragraph {
+  margin: 0;
+}
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.homepage {
+  /* position: relative; */
+  /* padding-top: -2rem; */
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.nav2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.nav-description {
+  display: flex;
+  gap: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.nav-description2 {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+.nav-description ul {
+  display: flex;
+  text-decoration: none;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-description li {
+  cursor: pointer;
+}
+.nav-description2 ul {
+  display: flex;
+  text-decoration: none;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-description2 li {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.home-image {
+  display: flex;
+  gap: 1rem;
+}
+.h1 {
+  cursor: pointer;
+}
+.home-first {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+  gap: 4rem;
+}
+.home-front {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50rem;
+  height: 40rem;
+  z-index: -1;
+}
+.absolute img {
+  width: 100%;
+  height: 100%;
+}
+.absolutee {
+  position: absolute;
+  left: 0;
+  top: 6rem;
+  width: 30rem;
+  height: 70rem;
+  z-index: -1;
+}
+
+.grid-1 h3 {
+  font-family: Playfair Display;
+  font-size: 4.3rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+  padding-right: 7rem;
+}
+.grid-1 p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+  padding-right: 10rem;
+}
+.first-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+.first-button button {
+  background-color: #000000;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.first-button p {
+  font-family: Inter;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.first-numbers {
+  display: flex;
+}
+.f1 h3 {
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+.f1 p {
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding-right: 0;
+}
+.frame {
+  position: absolute;
+  top: 5rem;
+  right: 4rem;
+}
+.frame2 {
+  position: absolute;
+  top: 13rem;
+  right: 33rem;
+}
+.collections {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding-left: 3rem;
+  padding-bottom: 4rem;
+}
+.collection-one h4 {
+  font-family: Inter;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  color: #924d2b;
+}
+.collection-one h3 {
+  font-family: Playfair Display;
+  font-size: 2.8em;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 20rem;
+}
+.collection-one button {
+  padding: 0.5rem;
+  background-color: #000000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.collection-two {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.two-one h2 {
+  font-family: Playfair Display;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+.two-one p {
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #5f5f5f;
+  padding-right: 2rem;
+}
+.experience {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.experience-first {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.experience-first h4 {
+  font-family: Playfair Display;
+  font-size: 2.8rem;
+  font-weight: 400;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+.experience-second {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.oone {
+  width: 30%;
+  padding-top: 7rem;
+}
+.oone img {
+  width: 100%;
+}
+.oone p {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.twoo {
+  width: 30%;
+  padding-top: 13rem;
+}
+.twoo img {
+  width: 100%;
+}
+.twoo p {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.threee {
+  width: 30%;
+}
+.threee p {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 400;
+  /* padding-right: 3rem; */
+}
+.threee img {
+  width: 100%;
+}
+.onee-price {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.onee-price h4 {
+  margin-right: auto;
+  font-family: Playfair Display;
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+.onee-price p {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.shop {
+  background-color: #fbfbfb;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+.shop-text {
+  justify-content: center;
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+.shop h3 {
+  font-family: Playfair Display;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-right: auto;
+}
+.shop-text button {
+  background-color: #000000;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.shop-flex {
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  flex-direction: column;
+}
+.flex-one {
+  display: flex;
+  gap: 1rem;
+}
+.flex-two {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.oooo {
+  width: 25%;
+}
+.oooo img {
+  width: 100%;
+}
+.oooo-text {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.oooo-text h4 {
+  margin-right: auto;
+  font-family: Playfair Display;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.oooo-text p {
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.faq-text {
+  background-color: #fffaf7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 5rem 3rem 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.text-1 h4 {
+  font-family: Playfair Display;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.text-2 {
+  display: flex;
+  gap: 2rem;
+}
+.text-2 h3 {
+  font-family: Playfair Display;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-top: 0.5rem;
+}
+.text-color {
+  width: 7rem;
+  justify-content: center;
+  text-align: center;
+}
+.color-1 {
+  background-color: #924d2b;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+.color-2 {
+  background-color: #dd9672;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+.color-3 {
+  background-color: #ffe6df;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+.faq-image {
+  background-image: url(/images/Rectangle6.png);
+  height: 40rem;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.iiii {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+.about {
+  padding: 4rem 3rem;
+}
+.about-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about-text h3 {
+  font-family: Playfair Display;
+  font-size: 2.8rem;
+  font-weight: 400;
+  padding: 0.5rem 25rem;
+}
+.about-text p {
+  font-family: Inter;
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding: 0.5rem 25rem 2rem;
+}
+.about-image {
+  display: flex;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+.aaaa {
+  width: 35%;
+}
+.aaaa img {
+  width: 100%;
+}
+.aaaa h4 {
+  font-family: Playfair Display;
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-top: 0.5rem;
+}
+.contact {
+  background-color: #fbfbfb;
+  padding: 6rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+.contact-one h3 {
+  font-family: Playfair Display;
+  font-size: 2.85rem;
+  font-weight: 400;
+  padding-right: 12rem;
+  padding-bottom: 0.7rem;
+}
+.contact-one p {
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.contact-one button {
+  background-color: #000000;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+}
+footer {
+  background-color: #000000;
+  padding-bottom: 0.5rem;
+}
+.socials {
+  display: flex;
+  padding-right: 3rem;
+  padding-top: 7rem;
+}
+.social-flex {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+.empty2 {
+  /* padding: 0.5rem; */
+  margin: 1.5rem 3rem;
+  border: 0.5px solid #ffffff;
+}
+.last-part {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.last-part h3 {
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ffffff;
+}
