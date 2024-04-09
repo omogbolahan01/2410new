@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 export default function Home() {
   const sectionRefs = {
     section1: useRef(null),
@@ -13,10 +13,16 @@ export default function Home() {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleNavItemClick = (section) => {
-    scrollToRef(sectionRefs[section]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleNavItemClick = (section) => {
+    toggleMenu();
+    scrollToRef(sectionRefs[section]);
+  };
   return (
     <div className="homepage">
       <div className="absolute">
@@ -27,7 +33,15 @@ export default function Home() {
           <img src="/images/flower.png" alt="" />
         </div>
         <div className="nav-description">
-          <ul>
+          <div
+            className={isMenuOpen ? "menu-icon change" : "menu-icon"}
+            onClick={toggleMenu}
+          >
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
+          <ul className={isMenuOpen ? "menu open" : "menu"}>
             <li>
               <p onClick={() => handleNavItemClick("section1")}>Collection</p>
             </li>
