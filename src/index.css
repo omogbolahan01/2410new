@@ -739,7 +739,6 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  /* Show menu items */
   .menu.open {
     transform: translateY(0);
   }
@@ -747,7 +746,6 @@ footer {
     display: block;
   }
 
-  /* Menu item styling */
   .menu li {
     display: none;
     padding: 15px 20px;
@@ -756,7 +754,6 @@ footer {
     text-align: center;
   }
 
-  /* Hover effect */
   .menu li:hover {
     background-color: #f9f9f9;
   }
